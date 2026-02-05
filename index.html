@@ -1,17 +1,21 @@
+<!-- ================= CTA LINKS ================= -->
+<!-- All buttons point to /acquisition -->
+
+<!-- Replace everywhere with: -->
+<!-- https://cyberpreempt.com/acquisition -->
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 
-<title>CyberPreempt.com — Strategic Cybersecurity Intelligence</title>
+<title>CyberPreempt.com — Cybersecurity Intelligence Asset</title>
 
 <meta name="description"
-content="CyberPreempt.com is a strategic cybersecurity intelligence asset aligned with Gartner’s preemptive security framework."/>
+content="Strategic cybersecurity intelligence platform aligned with Gartner’s preemptive security framework."/>
 
-<meta name="robots" content="index,follow"/>
-
-  <!-- Google Analytics -->
+ <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XRPZ3HWEV"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -22,7 +26,7 @@ content="CyberPreempt.com is a strategic cybersecurity intelligence asset aligne
 
 <style>
 
-/* ================= ROOT ================= */
+/* ===== CORE ===== */
 
 :root{
 --bg:#070A10;
@@ -32,23 +36,18 @@ content="CyberPreempt.com is a strategic cybersecurity intelligence asset aligne
 --line:rgba(255,255,255,.10);
 --accent:#4F7CFF;
 --accent2:#3EE6C2;
---ok:#39E58C;
---warn:#FFB020;
 --shadow:0 18px 60px rgba(0,0,0,.55);
 --radius:20px;
 --max:1100px;
---font:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+--font:system-ui,Segoe UI,Roboto,Arial;
 }
 
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-
 body{
 margin:0;
 font-family:var(--font);
 background:#070A10;
 color:var(--text);
-overflow-x:hidden;
 }
 
 a{text-decoration:none;color:inherit}
@@ -58,29 +57,28 @@ width:min(var(--max),calc(100% - 36px));
 margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* ===== HEADER ===== */
 
 header{
+background:rgba(7,10,16,.95);
+border-bottom:1px solid var(--line);
 position:sticky;
 top:0;
 z-index:1000;
-background:rgba(7,10,16,.9);
-backdrop-filter:blur(10px);
-border-bottom:1px solid var(--line);
 }
 
 .nav{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:14px 0;
 }
 
 .brand{
-font-weight:800;
 display:flex;
 gap:10px;
 align-items:center;
+font-weight:800;
 }
 
 .logo{
@@ -94,7 +92,6 @@ background:linear-gradient(135deg,var(--accent),var(--accent2));
 display:flex;
 gap:18px;
 font-size:13px;
-font-weight:700;
 color:var(--muted);
 }
 
@@ -106,10 +103,7 @@ border-radius:14px;
 font-weight:800;
 border:1px solid rgba(255,255,255,.12);
 background:rgba(255,255,255,.03);
-transition:.2s;
 }
-
-.btn:hover{background:rgba(255,255,255,.06)}
 
 .btn-primary{
 background:linear-gradient(135deg,var(--accent),var(--accent2));
@@ -117,9 +111,17 @@ border:none;
 color:#fff;
 }
 
-/* ================= HERO ================= */
+/* ===== HERO ===== */
 
 .hero{padding:50px 0}
+
+.card{
+background:rgba(12,18,32,.7);
+border:1px solid var(--line);
+border-radius:20px;
+padding:28px;
+box-shadow:var(--shadow);
+}
 
 .hero-grid{
 display:grid;
@@ -127,35 +129,13 @@ grid-template-columns:1.2fr .8fr;
 gap:20px;
 }
 
-.card{
-background:rgba(12,18,32,.7);
-border:1px solid var(--line);
-border-radius:var(--radius);
-box-shadow:var(--shadow);
-}
-
-.card-inner{padding:28px}
-
-.badge{
-display:inline-block;
-padding:6px 12px;
-border-radius:999px;
-font-size:12px;
-border:1px solid var(--line);
-background:rgba(255,255,255,.03);
-}
-
-.hero h1{
+h1{
 font-size:clamp(26px,4vw,42px);
-margin:14px 0;
 }
 
-.hero p{
-color:var(--muted);
-line-height:1.6;
-}
+p{color:var(--muted);line-height:1.6}
 
-.shock{
+.stats{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:12px;
@@ -174,81 +154,24 @@ padding:14px;
 .stat span{
 font-size:12px;
 color:var(--muted);
-display:block;
-margin-top:6px;
 }
 
-.source{
-font-size:12px;
-color:var(--muted);
-margin-bottom:14px;
-}
+/* ===== SECTIONS ===== */
 
-.qblock{
-border:1px dashed var(--line);
-border-radius:16px;
-padding:14px;
-background:rgba(7,10,16,.4);
-}
-
-.qblock h3{margin:0 0 8px;font-size:14px}
-
-.qblock ul{
-margin:0;
-padding-left:18px;
-color:var(--muted);
-font-size:13px;
-line-height:1.7;
-}
-
-.cta-row{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
-margin-top:16px;
-}
-
-/* ================= SIDE ================= */
-
-.side{
-display:flex;
-flex-direction:column;
-gap:12px;
-}
-
-.mini{
-background:rgba(7,10,16,.7);
-border:1px solid var(--line);
-border-radius:16px;
-padding:16px;
-}
-
-.mini h4{
-margin:0 0 8px;
-font-size:13px;
-}
-
-/* ================= SECTIONS ================= */
-
-section{padding:26px 0}
+section{padding:30px 0}
 
 .panel{
 background:rgba(12,18,32,.7);
 border:1px solid var(--line);
-border-radius:var(--radius);
-padding:22px;
+border-radius:20px;
+padding:24px;
 }
 
-.section-title{
-font-size:18px;
-margin:0 0 10px;
-}
-
-.cards4{
+.cards{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:12px;
-margin-top:12px;
+margin-top:14px;
 }
 
 .tile{
@@ -256,42 +179,40 @@ background:rgba(7,10,16,.7);
 border:1px solid var(--line);
 border-radius:14px;
 padding:14px;
-}
-
-.tile p{
 font-size:13px;
 color:var(--muted);
 }
 
-/* ================= DEAL ================= */
+/* ===== CTA ===== */
 
-.deal{
+.cta{
 background:
-radial-gradient(700px 300px at 20% 0%,rgba(79,124,255,.2),transparent),
+radial-gradient(600px 200px at 20% 0%,rgba(79,124,255,.2),transparent),
 rgba(12,18,32,.8);
-border-radius:26px;
 border:1px solid rgba(79,124,255,.3);
+border-radius:24px;
 padding:26px;
+text-align:center;
 }
 
-/* ================= FOOTER ================= */
+/* ===== FOOTER ===== */
 
 footer{
-padding:40px 0 80px;
+padding:40px 0 60px;
 border-top:1px solid var(--line);
 color:var(--muted);
 }
 
-/* ================= RESPONSIVE ================= */
+/* ===== MOBILE ===== */
 
 @media(max-width:900px){
 .hero-grid{grid-template-columns:1fr}
-.cards4{grid-template-columns:1fr 1fr}
+.cards{grid-template-columns:1fr 1fr}
 .menu{display:none}
 }
 
 @media(max-width:600px){
-.cards4{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
 }
 
 </style>
@@ -299,7 +220,7 @@ color:var(--muted);
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- ===== HEADER ===== -->
 
 <header>
 <div class="container">
@@ -315,232 +236,121 @@ CyberPreempt.com
 <a href="/">Home</a>
 <a href="/about.html">About</a>
 <a href="/contact.html">Contact</a>
-<a href="/acquisition.html">Acquisition</a>
+<a href="/acquisition">Acquisition</a>
 </div>
 
-<a href="SALE_PAGE_URL_HERE" class="btn btn-primary">
+<a href="https://cyberpreempt.com/acquisition" class="btn btn-primary">
 View Acquisition →
 </a>
 
 </div>
+
 </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ===== HERO ===== -->
 
 <div class="container hero">
 
 <div class="hero-grid">
 
-<!-- MAIN -->
-
 <div class="card">
-<div class="card-inner">
-
-<span class="badge">Gartner Signal • AI Security Shift</span>
 
 <h1>
 Preemptive Cybersecurity<br>
-Is Becoming a Board-Level Priority
+Is Reshaping Enterprise Defense
 </h1>
 
 <p>
-Gartner warns that AI-enabled attacks are accelerating beyond traditional
-detection models. Organizations that fail to adapt face material risk,
-reputational damage, and long-term competitive loss.
+AI-driven attacks are forcing organizations
+to migrate from reactive security models
+to predictive, exposure-based defense systems.
 </p>
 
-<div class="shock">
+<div class="stats">
 
 <div class="stat">
 <b>50%</b>
-<span>IT security spending shifting to preemptive defense by 2030</span>
+<span>IT security spend by 2030 (Gartner)</span>
 </div>
 
 <div class="stat">
-<b>2–4 Years</b>
-<span>Window for career-impacting incidents</span>
+<b>$42B+</b>
+<span>Forecast market size (2032)</span>
 </div>
 
 <div class="stat">
-<b>90 Days</b>
-<span>Average exposure identification delay</span>
+<b>14–18%</b>
+<span>Annual CAGR (2024–2032)</span>
 </div>
 
 </div>
 
-<div class="source">
-Source: Gartner — Preemptive Cybersecurity (2025–2026)
-</div>
-
-<div class="qblock">
-
-<h3>Are You Strategically Prepared?</h3>
-
-<ul>
-<li>Are your investments aligned with preemptive defense?</li>
-<li>Can you afford 90 days of exposure?</li>
-<li>Would your board accept a preventable breach?</li>
-<li>Do you control category assets?</li>
-</ul>
-
-</div>
-
-<div class="cta-row">
-
-<a href="SALE_PAGE_URL_HERE" class="btn btn-primary">
-View Strategic Opportunity →
-</a>
-
-<a href="#deal" class="btn">
-Request Executive Brief
+<a href="https://cyberpreempt.com/acquisition" class="btn btn-primary">
+Review Strategic Asset →
 </a>
 
 </div>
 
-</div>
-</div>
+<div class="card">
 
-<!-- SIDE -->
+<h3>Executive Perspective</h3>
 
-<div class="side">
-
-<div class="mini">
-<h4>Executive Context</h4>
 <p>
-Security is now a governance decision, not only a technical one.
-</p>
-</div>
-
-<div class="mini">
-<h4>Asset Summary</h4>
-<p>
-CyberPreempt.com is positioned as a category-defining intelligence asset.
-</p>
-</div>
-
-<div class="mini">
-<h4>Availability</h4>
-<p>
-Access limited to qualified buyers.
+Security is now a governance issue.
+Boards increasingly evaluate cyber posture
+as part of enterprise valuation.
 </p>
 
-<a href="SALE_PAGE_URL_HERE"
-class="btn btn-primary"
-style="width:100%;margin-top:10px">
-Review Details →
+<p>
+Organizations controlling category-defining
+digital assets gain structural advantage.
+</p>
+
+<a href="https://cyberpreempt.com/acquisition" class="btn">
+View Opportunity →
 </a>
-</div>
 
 </div>
 
 </div>
 </div>
 
-<!-- ================= CONTEXT ================= -->
+<!-- ===== MARKET DATA ===== -->
 
 <section>
 <div class="container">
 
 <div class="panel">
 
-<h2 class="section-title">
-Cybersecurity Intelligence: The Strategic Imperative
-</h2>
+<h2>Global Market Intelligence</h2>
 
-<p class="muted">
-Modern cybersecurity is evolving from detection to prevention,
-embedding predictive analytics and exposure management into governance.
+<p>
+According to Gartner and industry analysts,
+preemptive cybersecurity is becoming
+the dominant enterprise security paradigm.
 </p>
 
-</div>
-
-</div>
-</section>
-
-<!-- ================= GARTNER SECTION ================= -->
-
-<section id="gartner-framework">
-<div class="container">
-
-<div class="panel">
-
-<span class="badge">Gartner Framework</span>
-
-<h2 class="section-title" style="margin-top:10px;">
-The 3 D’s of Preemptive Cybersecurity
-</h2>
-
-<p class="muted">
-Gartner defines modern cyber defense through three pillars:
-Deny, Deceive, and Disrupt.
-</p>
-
-<div style="
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-align-items:center;
-margin-top:20px;
-">
-
-<!-- IMAGE -->
-
-<div style="text-align:center">
-
-<img
-src="images/gartner-3d-framework.png"
-alt="Gartner 3D Framework"
-style="
-max-width:100%;
-border-radius:18px;
-border:1px solid rgba(255,255,255,.12);
-background:#fff;
-padding:10px;
-"
-/>
-
-<div style="margin-top:8px;font-size:12px;color:var(--muted);">
-Source: Gartner (2025)
-</div>
-
-</div>
-
-<!-- TEXT -->
-
-<div>
-
-<div class="cards4" style="grid-template-columns:1fr;">
+<div class="cards">
 
 <div class="tile">
-<b>Deny</b>
-<p>Block access through exposure management and obfuscation.</p>
+<b>$18.7B (2024)</b><br>
+Global cybersecurity intelligence market
 </div>
 
 <div class="tile">
-<b>Deceive</b>
-<p>Use decoys and moving targets to mislead attackers.</p>
+<b>$25.5B (2026)</b><br>
+Mid-cycle adoption phase
 </div>
 
 <div class="tile">
-<b>Disrupt</b>
-<p>Predict and interrupt attack chains early.</p>
+<b>$34.8B (2028)</b><br>
+AI-driven expansion
 </div>
 
-</div>
-
-<div class="cta-row">
-
-<a href="SALE_PAGE_URL_HERE" class="btn btn-primary">
-View Positioning →
-</a>
-
-<a href="#deal" class="btn">
-See Rationale
-</a>
-
-</div>
-
+<div class="tile">
+<b>$42.3B+ (2032)</b><br>
+Mature market valuation
 </div>
 
 </div>
@@ -550,35 +360,31 @@ See Rationale
 </div>
 </section>
 
-<!-- ================= VALUE ================= -->
+<!-- ===== VALUE ===== -->
 
 <section>
 <div class="container">
 
 <div class="panel">
 
-<h2 class="section-title">Enterprise Value Drivers</h2>
+<h2>Strategic Value Drivers</h2>
 
-<div class="cards4">
+<div class="cards">
 
 <div class="tile">
-<b>Operational</b>
-<p>Reduced incident impact</p>
+Reduced breach probability
 </div>
 
 <div class="tile">
-<b>Regulatory</b>
-<p>Improved audit posture</p>
+Improved regulatory posture
 </div>
 
 <div class="tile">
-<b>Strategic</b>
-<p>Market credibility</p>
+Stronger enterprise valuation
 </div>
 
 <div class="tile">
-<b>Financial</b>
-<p>Lower breach costs</p>
+Market authority positioning
 </div>
 
 </div>
@@ -588,43 +394,36 @@ See Rationale
 </div>
 </section>
 
-<!-- ================= DEAL ================= -->
+<!-- ===== CTA ===== -->
 
-<section id="deal">
+<section>
 <div class="container">
 
-<div class="deal">
+<div class="cta">
 
 <h2>Strategic Acquisition Opportunity</h2>
 
 <p>
-CyberPreempt.com is positioned as an enterprise-grade cybersecurity
-intelligence asset aligned with Gartner’s framework.
+CyberPreempt.com is positioned
+as a category-aligned cybersecurity intelligence asset.
 </p>
 
-<div class="cta-row">
-
-<a href="SALE_PAGE_URL_HERE" class="btn btn-primary">
-View Valuation & Terms →
+<a href="https://cyberpreempt.com/acquisition"
+class="btn btn-primary">
+Access Acquisition Details →
 </a>
-
-<a href="mailto:contact@dntrusted.com" class="btn">
-Request Brief
-</a>
-
-</div>
 
 </div>
 
 </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ===== FOOTER ===== -->
 
 <footer>
 <div class="container">
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+<div style="display:flex;justify-content:space-between">
 
 <div>
 <b>CyberPreempt.com</b><br>
